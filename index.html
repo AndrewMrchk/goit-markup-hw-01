@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>https://andrii-marchuk.github.io/goit-markup-hw-01/</title>
   </head>
   <body>
@@ -21,27 +23,37 @@
       </nav>
       <ul class="contacts">
         <li class="email">
-          <a href="mailto:info@devstudio.com"
-            ><img src="#" alt="letter" /> info@devstudio.com</a
-          >
+          <a href="mailto:info@devstudio.com">
+            <img src="./img/icon/email.svg" alt="letter" />
+            info@devstudio.com
+          </a>
         </li>
         <li class="telephone">
-          <a href="tel:+380961111111"
-            ><img src="#" alt="telephone" /> +38 096 111 11 11</a
-          >
+          <a href="tel:+380961111111">
+            <img src="./img/icon/smartphone.svg" alt="telephone" />
+            +38 096 111 11 11
+          </a>
         </li>
       </ul>
       <div class="hero">
+        <img
+          src="./img/hero/overlay.png"
+          alt="office work"
+          width="1600"
+          height="600"
+        />
         <h1>Эффективные решения для вашего бизнеса</h1>
         <button>Заказать услугу</button>
       </div>
     </header>
     <main>
       <section class="advantages container">
-        <h2 class="our-advantages visually-hidden">наши преимущества</h2>
-        <ul>
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="our-advantages">
           <li class="advantage-list">
-            <img src="#" alt="icon-radar" />
+            <div class="advantage-icon-wrapper">
+              <img src="./img/icon/antenna.svg" alt="icon-antenna" />
+            </div>
             <h3 class="advantage-item">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по
@@ -49,7 +61,9 @@
             </p>
           </li>
           <li class="advantage-list">
-            <img src="#" alt="icon-clock" />
+            <div class="advantage-icon-wrapper">
+              <img src="./img/icon/clock.svg" alt="icon-clock" />
+            </div>
             <h3 class="advantage-item">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров
@@ -57,15 +71,20 @@
             </p>
           </li>
           <li class="advantage-list">
-            <img src="#" alt="icon-analitics" />
+            <div class="advantage-icon-wrapper">
+              <img src="./img/icon/diagram.svg" alt="icon-diagram" />
+            </div>
             <h3 class="advantage-item">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной
               степени обуславливает.
             </p>
           </li>
+          <li class="advantage-list"></li>
           <li class="advantage-list">
-            <img src="#" alt="icon-cosmonaut" />
+            <div class="advantage-icon-wrapper">
+              <img src="./img/icon/astronaut.svg" alt="icon-astronaut" />
+            </div>
             <h3 class="advantage-item">Современные технологии</h3>
             <p>
               Значимость этих проблем настолько очевидна, что реализация
@@ -78,126 +97,150 @@
         <h2>Чем мы занимаемся</h2>
         <ul class="employment-list">
           <li>
-            <img src="#" alt="desctop" />
+            <img src="./img/our-work/desktop.png" alt="desctop" />
             <h3>Десктопные приложения</h3>
           </li>
           <li>
-            <img src="#" alt="mobyle" />
+            <img src="./img/our-work/smartphone.jpg" alt="smartphone" />
             <h3>Мобильные приложения</h3>
           </li>
           <li>
-            <img src="#" alt="monitore" />
+            <img src="./img/our-work/monitor.png" alt="monitore" />
             <h3>Дизайнерские решения</h3>
           </li>
         </ul>
       </section>
       <section class="our-team container">
+        <h2>Наша команда</h2>
         <ul class="our-team-list">
           <li class="our-team-specialist">
-            <img src="#" alt="photo" />
+            <img src="./img/team/nic.jpg" alt="photo" />
             <h3>Николай Кучеренко</h3>
             <span>Product Designer</span>
             <ul class="social-list">
               <li class="social-list-item">
                 <a href="#" class="instagram"
-                  ><img src="#" alt="instagram-icon"
+                  ><img
+                    src="./img/icon/social/instagram.svg"
+                    alt="instagram-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="twitter"
-                  ><img src="#" alt="twitter-icon"
+                  ><img src="./img/icon/social/twitter.svg" alt="twitter-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="facebook"
-                  ><img src="#" alt="facebook-icon"
+                  ><img
+                    src="./img/icon/social/facebook.svg"
+                    alt="facebook-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="linkedin"
-                  ><img src="#" alt="linkedin-icon"
+                  ><img
+                    src="./img/icon/social/linkedin.svg"
+                    alt="linkedin-icon"
                 /></a>
               </li>
             </ul>
           </li>
           <li class="our-team-specialist">
-            <img src="#" alt="photo" />
+            <img src="./img/team/olha.png" alt="photo" />
             <h3>Ольга Иванова</h3>
             <span>Frontend Developer</span>
             <ul class="social-list">
               <li class="social-list-item">
                 <a href="#" class="instagram"
-                  ><img src="#" alt="instagram-icon"
+                  ><img
+                    src="./img/icon/social/instagram.svg"
+                    alt="instagram-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="twitter"
-                  ><img src="#" alt="twitter-icon"
+                  ><img src="./img/icon/social/twitter.svg" alt="twitter-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="facebook"
-                  ><img src="#" alt="facebook-icon"
+                  ><img
+                    src="./img/icon/social/facebook.svg"
+                    alt="facebook-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="linkedin"
-                  ><img src="#" alt="linkedin-icon"
+                  ><img
+                    src="./img/icon/social/linkedin.svg"
+                    alt="linkedin-icon"
                 /></a>
               </li>
             </ul>
           </li>
-
           <li class="our-team-specialist">
-            <img src="#" alt="photo" />
+            <img src="./img/team/andrew.jpg" alt="photo" />
             <h3>Андрей Шевченко</h3>
             <span>Marketing</span>
             <ul class="social-list">
               <li class="social-list-item">
                 <a href="#" class="instagram"
-                  ><img src="#" alt="instagram-icon"
+                  ><img
+                    src="./img/icon/social/instagram.svg"
+                    alt="instagram-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="twitter"
-                  ><img src="#" alt="twitter-icon"
+                  ><img src="./img/icon/social/twitter.svg" alt="twitter-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="facebook"
-                  ><img src="#" alt="facebook-icon"
+                  ><img
+                    src="./img/icon/social/facebook.svg"
+                    alt="facebook-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="linkedin"
-                  ><img src="#" alt="linkedin-icon"
+                  ><img
+                    src="./img/icon/social/linkedin.svg"
+                    alt="linkedin-icon"
                 /></a>
               </li>
             </ul>
           </li>
           <li class="our-team-specialist">
-            <img src="#" alt="photo" />
+            <img src="./img/team/ivan.png" alt="photo" />
             <h3>Иван Николаев</h3>
             <span>UI Designer</span>
             <ul class="social-list">
               <li class="social-list-item">
                 <a href="#" class="instagram"
-                  ><img src="#" alt="instagram-icon"
+                  ><img
+                    src="./img/icon/social/instagram.svg"
+                    alt="instagram-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="twitter"
-                  ><img src="#" alt="twitter-icon"
+                  ><img src="./img/icon/social/twitter.svg" alt="twitter-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="facebook"
-                  ><img src="#" alt="facebook-icon"
+                  ><img
+                    src="./img/icon/social/facebook.svg"
+                    alt="facebook-icon"
                 /></a>
               </li>
               <li class="social-list-item">
                 <a href="#" class="linkedin"
-                  ><img src="#" alt="linkedin-icon"
+                  ><img
+                    src="./img/icon/social/linkedin.svg"
+                    alt="linkedin-icon"
                 /></a>
               </li>
             </ul>
@@ -209,32 +252,32 @@
         <ul class="clients-list">
           <li class="clients-list-item">
             <a href="#">
-              <img src="#" alt="logotype" />
+              <img src="./img/icon/clients/logo-1.svg" alt="logotype" />
             </a>
           </li>
           <li class="clients-list-item">
             <a href="#">
-              <img src="#" alt="logotype" />
+              <img src="./img/icon/clients/logo-2.svg" alt="logotype" />
             </a>
           </li>
           <li class="clients-list-item">
             <a href="#">
-              <img src="#" alt="logotype" />
+              <img src="./img/icon/clients/logo-3.svg" alt="logotype" />
             </a>
           </li>
           <li class="clients-list-item">
             <a href="#">
-              <img src="#" alt="logotype" />
+              <img src="./img/icon/clients/logo-4.svg" alt="logotype" />
             </a>
           </li>
           <li class="clients-list-item">
             <a href="#">
-              <img src="#" alt="logotype" />
+              <img src="./img/icon/clients/logo-5.svg" alt="logotype" />
             </a>
           </li>
           <li class="clients-list-item">
             <a href="#">
-              <img src="#" alt="logotype" />
+              <img src="./img/icon/clients/logo-6.svg" alt="logotype" />
             </a>
           </li>
         </ul>
@@ -286,7 +329,9 @@
         <div class="wrapper">
           <h4>Подпишитесь на рассылку</h4>
           <input type="email" name="#" id="#" />
-          <button class="accept">Подписаться</button>
+          <button class="accept">
+            Подписаться<img src="./img/icon/send.svg" alt="send-icon" />
+          </button>
         </div>
       </div>
     </footer>

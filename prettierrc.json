@@ -11,7 +11,7 @@
     "requirePragma": false,
     "semi": false,
     "singleQuote": false,
-    "tabWidth": 3,
+    "tabWidth": 5,
     "trailingComma": "all",
     "useTabs": true,
     "vueIndentScriptAndStyle": false,
