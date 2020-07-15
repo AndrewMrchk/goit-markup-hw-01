@@ -1,3 +1,7 @@
 .visually-hidden {
   visibility: hidden;
 }
+
+.accept {
+  background: #2196f3;
+}
